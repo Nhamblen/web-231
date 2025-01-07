@@ -1,2 +1,6 @@
-# web-231
-Weekly projects for JavaScript I (web-231)
+# WEB 231 Enterprise JavaScript I
+
+## Contributors
+
+- Instructor: [Professor Krasso]
+- Student: Noah Hamblen
