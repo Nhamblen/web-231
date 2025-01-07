@@ -2,5 +2,5 @@
 
 ## Contributors
 
-- Instructor: [Professor Krasso]
+- Instructor: Professor Krasso
 - Student: Noah Hamblen
