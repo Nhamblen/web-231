@@ -3,9 +3,9 @@
       Project 02-02
 
       Application to test for completed form
-      Author: 
-      Date:   
+      Author: Noah Hamblen
+      Date: 1/12/25
 
       Filename: project02-02.js
  */
- 
+
