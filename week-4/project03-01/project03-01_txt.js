@@ -11,7 +11,7 @@
 
 let menuItems = document.getElementsByClassName("menuItem");
 
-// Loops through menuItems
+// Loops through menuItems and adds event listener
 for (let i = 0; i < menuItems.length; i++) {
   menuItems[i].addEventListener("click", calcTotal);
 }
