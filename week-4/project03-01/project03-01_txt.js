@@ -9,6 +9,12 @@
       Filename: project03-01.js
 */
 
+let menuItems = getElementByClassName("menuItem");
+
+for (let i = 0; i < menuItems.length; i++) {
+  menuItems[i].addEventListener("click", calcTotal);
+}
+
 // Function to display a numeric value as a text string in the format $##.##
 function formatCurrency(value) {
   return "$" + value.toFixed(2);
