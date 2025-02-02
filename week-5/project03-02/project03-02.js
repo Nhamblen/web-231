@@ -9,6 +9,7 @@
       Filename: project03-02.js
 */
 
+// Caption array to put on the images
 let captions = new Array(14);
 captions[0] = "International Space Station fourth expansion [2009]";
 captions[1] = "Assembling the International Space Station [1998]";
@@ -24,3 +25,17 @@ captions[10] = "Maneuvering in space with the Canadarm2 [2006]";
 captions[11] = "The International Space Station second expansion [2006]";
 captions[12] = "The International Space Station third expansion [2007]";
 captions[13] = "The ISS over the Ionian Sea [2007]";
+
+let htmlCode = "";
+
+// Loop through array and add the img/caption html to each one
+for (let i = 0; i < captions.length; i++) {
+  htmlCode += `
+  <figure>
+      <img alt='' src='slide${i}.jpg' />
+      <figcaption>${captions[i]}</figcaption>
+  </figure>`;
+}
+
+// Set the inner HTML of the element with id "gallery"
+document.getElementById("gallery").innerHTML = htmlCode;
