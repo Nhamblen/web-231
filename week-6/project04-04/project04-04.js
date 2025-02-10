@@ -9,6 +9,7 @@
       Filename: project04-04.js
 */
 
+// strict adherence for JavaScript syntax
 "use strict";
 
 // Global variables
@@ -36,13 +37,25 @@ function zeroTheRegister() {
 
 // Function to run the cash register
 function runTheRegister() {
-  zeroTheRegister();
+  try {
+    zeroTheRegister(); // Reset the values in the web page
 
-  let changeValue = cashBox.value - billBox.value; // calculate the change
+    // Calculate the change
+    let changeValue = cashBox.value - billBox.value;
 
-  changeBox.value = formatCurrency(changeValue); // format the change as currency
+    // Check if changeValue is negative (i.e., cash amount doesn't cover the bill)
+    if (!(changeValue >= 0)) {
+      throw new Error("Cash amount doesn't cover the bill");
+    }
 
-  calcChange(changeValue); // Determine the units of currency needed for the change
+    // If no exception is thrown, continue with the regular process
+    changeBox.value = formatCurrency(changeValue); // Format the change as currency
+    calcChange(changeValue); // Determine the units of currency needed for the change
+
+  } catch (error) {
+    // Handle the exception by displaying the error message
+    document.getElementById("warning").innerHTML = error.message;
+  }
 }
 
 // Function to calculate the change by each unit of currency
