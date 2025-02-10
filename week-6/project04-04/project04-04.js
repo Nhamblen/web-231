@@ -60,7 +60,7 @@ function calcChange(changeValue) {
   // Determine the number of $5 bills
   let bill5Amt = determineCoin(changeValue, 5);
   document.getElementById("bill5").innerHTML = bill5Amt;
-  changeValue -= bill5Amt * 3;
+  changeValue -= bill5Amt * 5;
 
   // Determine the number of $1 bills
   let bill1Amt = determineCoin(changeValue, 1);
