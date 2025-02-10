@@ -9,6 +9,7 @@
       Filename: project04-04.js
 */
 
+// strict adherence for JavaScript syntax
 "use strict";
 
 // Global variables
