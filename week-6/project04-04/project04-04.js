@@ -9,10 +9,12 @@
       Filename: project04-04.js
 */
 
+"use strict";
+
 // Global variables
-let cashBox = document.getElementById(cash);
-let billBox = document.getElementById(bill);
-let changeBox = document.getElementById(change);
+let cashBox = document.getElementById("cash");
+let billBox = document.getElementById("bill");
+let changeBox = document.getElementById("change");
 
 // Event handlers to be run when the cash or bill value changes
 cashBox.addEventListener("change", runRegister);
