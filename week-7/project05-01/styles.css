@@ -130,6 +130,11 @@ ul {
   list-style: none;
 }
 
+/* border for incorrect answers (not included in instructions) */
+.incorrect {
+  border: 2px solid red;
+}
+
 /* page header */
 header {
   background: #5472b2;
