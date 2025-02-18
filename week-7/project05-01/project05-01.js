@@ -43,9 +43,8 @@ questionList.forEach((question, index) => {
 
 // Declare the ID for timed commands
 // and the node list for questions
-
 document.getElementById("startquiz").onclick = function () {
-  document.getElementById("overlay").className = "showquiz"; // Show quiz
+  document.getElementById("overlay").className = "showquiz"; // Show quiz on click
   timeLeft = quizTime; // Reset the time left
   quizClock.value = timeLeft; // Update timer display
   timeID = setInterval(countDown, 1000); // Start countdown every 1 second
@@ -64,7 +63,7 @@ function countDown() {
         `You answered ${totalCorrect} out of ${correctAnswers.length} questions correctly.`
       );
     }
-    document.getElementById("overlay").className = "hidequiz";
+    document.getElementById("overlay").className = "hidequiz"; // Hide the quiz display with a class after timer ends
   } else {
     timeLeft--; // Decrease time
     quizClock.value = timeLeft; // Update timer display
