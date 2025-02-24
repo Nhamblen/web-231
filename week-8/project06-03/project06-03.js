@@ -4,8 +4,8 @@
       Project 06-03
 
       Script to complete a form containing billing and shipping address information
-      Author: 
-      Date:   
+      Author: Noah Hamblen
+      Date: 2/24/25
 
       Filename: project06-03.js
 */
