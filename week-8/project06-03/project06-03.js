@@ -9,3 +9,9 @@
 
       Filename: project06-03.js
 */
+
+// useShip variable to reference the element with id "useShip"
+const useShip = getElementById("useShip");
+
+// Runs copyShippingToBilling function when clicked
+useShip.addEventListener("click", copyShippingToBilling);
