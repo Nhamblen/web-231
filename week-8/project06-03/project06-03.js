@@ -43,3 +43,16 @@ function copyShippingToBilling() {
       document.getElementById("stateShip").selectedIndex;
   }
 }
+
+let formElements = document.querySelectorAll("input[type='text']");
+let fieldCount = formElements.length;
+let errorBox = document.getElementById("errorBox");
+
+formElements.forEach((element) => {
+  element.addEventListener("invalid", showValidationError);
+});
+
+function showValidationError(evt) {
+  evt.preventDefault();
+  errorBox.textContent = "Complete all highlighted fields";
+}
